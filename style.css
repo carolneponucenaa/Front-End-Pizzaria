@@ -1,0 +1,51 @@
+body {
+    height: 100vh;
+    background-image: url(../img/background\ \(1\).webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background: linear-gradient(360deg, #fff0 0%, var(--cor-principal) 100%);
+    inset: 0;
+    z-index: -1;
+    padding: 32px
+}
+
+body::after{
+    position: absolute;
+    content: "";
+    display: block;
+    background: linear-gradient(360deg, #fff0 0%, var(--cor-principal) 100%);
+    inset: 0;
+    z-index: -1;
+}
+header{
+    height: 150px;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 100px;
+    align-items: center;
+
+}
+.conteudo-container{
+    color: #fff;
+    
+}
+.conteudo-container h1{
+    width: 230px;
+}
+.conteudo-container p{
+    width: 300px;
+}   
