@@ -1,29 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="login.css">
-  <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <title>Login</title>
 </head>
 
 <body>
-  <div class="login-container">
-    <h2>Acesse sua conta</h2>
-    <p>O que você está esperando para saborear as mais deliciosas pizzas e sobremesas da região?</p>
-    <form>
-        <input type="text" placeholder="Seu email ..." required>
-        <input type="password" placeholder="Sua senha ..." required>
-        <a href="inicio.html">
-          <button type="submit">ENTRAR</button>
-      </a>
-    </form>
-    <a href="#" class="forgot-password">Esqueceu a senha?</a>
-    <p class="create-account">Ainda não criou uma conta?
-        <a href="perfil.html">Criar conta</a></p>
-  </div>
+    <div class="login-container">
+        <h2>Acesse sua conta</h2>
+        <p>O que você está esperando para saborear as mais deliciosas pizzas e sobremesas da região?</p>
+        <form id="login" onsubmit="redirecionarInicio(); return false">
+            <input type="email" placeholder="Seu email ..." required>
+            <input type="senha" placeholder="Sua senha ..." required>
+            <button type="submit">ENTRAR</button>
+        </form>
+        <a href="#" class="esqueci-senha">Esqueceu a senha?</a>
+        <p class="criar-conta">Ainda não criou uma conta?
+            <a href="perfil.html">Criar conta</a></p>
+    </div>
 </body>
 
 </html>

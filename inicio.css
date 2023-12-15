@@ -26,7 +26,7 @@ header nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
+    width: 90vw;
 }
 .text{
     padding: 26px 22px;
@@ -119,7 +119,7 @@ main .categoria,
 .nome {
     width: 80%;
     padding: 0.25rem 0.4rem;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: 10px rgba(0, 0, 0, 0.55);
     font-size: 1rem;
     color: white;
     border-radius: 0 8px 0 8px;
@@ -130,9 +130,9 @@ main .categoria,
     align-items: center;
     justify-content: center;
     border-radius: 0.25rem;
-    box-shadow: 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
-    transition: 0.8s;
-    width: calc(33.33% - 12px);
+    box-shadow:0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+    width: 545px;
+    padding: 10px;
     background-color: white;
 }
 .pizzas,
@@ -162,7 +162,6 @@ main .categoria,
     gap: 0.375rem;
     font-weight: 700;
     font-size: 1rem;
-    color: var(--branco);
 }
 
 .favoritas-pizzas .pizza,
@@ -174,6 +173,7 @@ main .categoria,
 }
 footer{
     height: 8vh;
+    right: 8vh;
     width: 100vw;
     background-color: #F27706;
     display: flex;
@@ -182,11 +182,86 @@ footer{
     flex-direction: row;
 }
 
-.footer{
+.footer {
+    background-color: transparent;
     display: flex;
+    justify-content: space-around; 
     flex-direction: row;
-    gap: 48px;
 }
 
+button {
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; 
+}
 
+button:hover {
+    transform: scale(1.1); 
+}
 
+a {
+    text-decoration: none; 
+    color: #333;
+}
+
+img {
+    max-width: 40px;
+    max-height: 40px; 
+    margin-bottom: 5px; 
+}
+
+span {
+    display: block;
+    text-align: center; 
+}
+@media screen and (max-width: 768px) {
+    header{
+        height: 200px;
+        width: 500px;
+    }
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    main .categoria,
+    .categoria {
+        width: 2rem;
+        height: 2rem;
+    }
+        main
+        .categoriaS {
+            height: 10px; 
+        }
+
+    .foto {
+        padding: 12;
+    }
+
+    #input {
+        width: -60%;
+    }
+
+    .foods {
+        padding: 0;
+    }
+
+    main h3 {
+        text-align: center;
+    }
+    
+    .favoritas-pizzas .pizza {
+        width: 90%; /* Ocupar toda a largura disponível */
+    }
+    #pizza-calabresa,
+    #pizza-pepperoni,
+    #pizza-tomate,
+    #pizza-broto {
+        height: -60%; /* ou qualquer altura desejada para dispositivos móveis */
+    }
+
+    .bebidas-container .bebida {
+        height: -30%; /* ou qualquer altura desejada para dispositivos móveis */
+    }
+    }

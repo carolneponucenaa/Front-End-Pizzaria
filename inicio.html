@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inicio.css">
-    <title>Sua Página</title>
+    <script src="inicio.js"></script>
+    <title>Tony Pizzaria</title>
 </head>
 
 <body>
@@ -62,13 +63,13 @@
             <h3>Minhas pizzas favoritas</h3>
             <div class="favoritas-pizzas">
                 <button class="pizza" id="pizza-calabresa">
-                    <a href="">
+                    <a href="review.html">
                         <span class="preco">R$ 16,00</span>
                         <p class="nome">Pizza de calabresa com queijo</p>
                     </a>
                 </button>
                 <button class="pizza" id="pizza-pepperoni">
-                    <a href="">
+                    <a href="review2.html">
                         <span class="preco">R$ 19,00</span>
                         <p class="nome">Pizza de peperoni com queijo</p>
                     </a>
@@ -81,13 +82,13 @@
             <h3>Recomendados para você</h3>
             <div class="recomendados-pizzas">
                 <button class="pizza" id="pizza-tomate">
-                    <a href="">
+                    <a href="review3.html">
                         <span class="preco">R$ 16,00</span>
                         <p class="nome">Pizza de peperoni com queijo e tomate</p>
                     </a>
                 </button>
                 <button class="pizza" id="pizza-broto">
-                    <a href="">
+                    <a href="review4.html">
                         <span class="preco">R$ 12,00</span>
                         <p class="nome">Pizza brotinho com queijo e tomate</p>
                     </a>
@@ -98,7 +99,7 @@
         <div class="bebidas">
             <h3>Bebidas</h3>
             <div class="bebidas-container">
-                <button class="bebida">
+                <button class="bebida" onclick="mostrarMensagem('Coca-Cola disponível')">
                     <a href="">
                         <div class="bebidas">
                             <img src="/img/coca-cola.webp" id="coca">
@@ -113,7 +114,7 @@
                         <span class="preco">R$ 14,99</span>
                     </a>
                 </button>
-                <button class="bebida">
+                <button class="bebida" onclick="mostrarMensagem('Heineken disponível')">
                     <a href="">
                         <div class="bebidas">
                             <img src="/img/cervejas.webp" id="coca">
@@ -134,7 +135,7 @@
 
     <footer>
         <button class="Perfil">
-            <a href="">
+            <a href="meu_perfil.html">
                 <img src="/img/pessoa.svg">
                 <span>Meu Perfil</span>
             </a>

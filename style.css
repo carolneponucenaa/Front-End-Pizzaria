@@ -44,8 +44,28 @@ main{
     
 }
 .conteudo-container h1{
-    width: 230px;
+    width: 400px;
+    margin-bottom: 40px;
 }
 .conteudo-container p{
     width: 300px;
-}   
+    margin-bottom: 280px;
+    margin-left: -50px;
+}  
+
+@media (max-width: 760px) {
+    body {
+        padding: 8px; 
+    }
+
+    main {
+        gap: 16px; 
+    }
+    .conteudo-container h1{
+        width: 150px;
+    }
+    .conteudo-container p{
+        width: 250px;
+    }  
+
+}
