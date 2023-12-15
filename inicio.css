@@ -11,49 +11,43 @@ body {
     position: relative;
 }
 
-
-
-header{
+.home-header {
+    color: #fff;
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 18vh;
-    width: 100vw;
-    align-items: center;
-}
-
-header nav{
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 90vw;
-}
-.text{
-    padding: 26px 22px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-
-.home{
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.foto{
-    padding: 0px 26px;
-}
+    align-items: center;
+  }
+  
+  .home {
+    font-size: 18px;
+  }
+  
+  .perfil img {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+  }
 
 #input {
-    background-image: url(/img/lupinha.webp);
     background-repeat: no-repeat;
-    background-position: right;
-    height: 150px;
-    border: none;
+    background-position: right center; 
+    background-size: 20px; 
+    height: 40px; 
+    border: 1px solid #ccc; 
     border-radius: 8px;
     width: 80%; 
-    padding: 0px 14px;
-    color: #aea2a2;
+    padding: 0 14px; 
+    color: #333; 
+    box-sizing: border-box; 
+    margin: 10px;
+    outline: none; 
 }
+
+#input:focus {
+    border-color: #f68b18;
+}
+
 
 ul {
     list-style: none;
@@ -116,6 +110,7 @@ main .categoria,
     padding: 0.25rem 0.375rem;
     color: white;
 }
+
 .nome {
     width: 80%;
     padding: 0.25rem 0.4rem;
@@ -124,62 +119,45 @@ main .categoria,
     color: white;
     border-radius: 0 8px 0 8px;
 }
-
-.bebidas-container .bebida {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.25rem;
-    box-shadow:0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
-    width: 545px;
-    padding: 10px;
-    background-color: white;
-}
-.pizzas,
-.recommendations,
-.drinks {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    padding: 0 0 0 1.25rem;
-}
-
-.favoritas-pizzas,
-.recomendados-pizzas,
-.bebidas-container {
-    display: flex;
-    gap: 12px;
-}
-
-.favoritas-pizzas a,
-.recomendados-pizzas a,
-.bebidas-container a {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    text-align: start;
-    gap: 0.375rem;
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-.favoritas-pizzas .pizza,
-.recomendados-pizzas .pizza {
+.bebida {
+    display: inline-block;
+    background-color: #fff;
+    color: #fff;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .bebida:hover {
+    background-color: #e07415; 
+  }
+  
+  .bebidas {
+    position: relative;
+  }
+  .bebidas-container{
+        display: flex;
+        gap: 12px;
+  }
+.pizza {
     flex-shrink: 0;
-    height: 10rem;
-    width: 15rem;
-    border-radius: 8px;
+    width: 150px; 
+    height: 100px; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    position: relative; 
+    background-color: #f27706; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 footer{
-    height: 8vh;
-    right: 8vh;
-    width: 100vw;
+    width: 95vw;
     background-color: #F27706;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    
 }
 
 .footer {
@@ -187,6 +165,7 @@ footer{
     display: flex;
     justify-content: space-around; 
     flex-direction: row;
+    color: white;
 }
 
 button {
@@ -216,15 +195,15 @@ span {
     text-align: center; 
 }
 @media screen and (max-width: 768px) {
-    header{
-        height: 200px;
-        width: 500px;
-    }
-    header nav {
+
+    .home-header {
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+        text-align: center;
+      }
+    
+      .home {
+        margin-bottom: 10px;
+      }
     main .categoria,
     .categoria {
         width: 2rem;
@@ -251,17 +230,20 @@ span {
         text-align: center;
     }
     
-    .favoritas-pizzas .pizza {
-        width: 90%; /* Ocupar toda a largura disponível */
-    }
+
     #pizza-calabresa,
     #pizza-pepperoni,
     #pizza-tomate,
     #pizza-broto {
-        height: -60%; /* ou qualquer altura desejada para dispositivos móveis */
+        height: -60%; 
     }
 
     .bebidas-container .bebida {
-        height: -30%; /* ou qualquer altura desejada para dispositivos móveis */
+        height: -30%; 
     }
+    footer{
+        height: 8vh;
+        right: 8vh;
+        width: 70vw;
     }
+}

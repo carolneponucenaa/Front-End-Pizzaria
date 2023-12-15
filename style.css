@@ -1,8 +1,10 @@
 body {
     height: 100vh;
-    background-image: url(../img/background\ \(1\).webp);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('/Front-End-Pizzaria/img/background\ \(1\).webp'); 
+    background-size: cover; 
+    background-position: top right; 
+    background-repeat: no-repeat; 
+    margin: 0;
     display: flex;
     flex-direction: column;
     padding: 32px 24px;
@@ -19,53 +21,27 @@ body::after {
     padding: 32px
 }
 
-body::after{
-    position: absolute;
-    content: "";
-    display: block;
-    background: linear-gradient(360deg, #fff0 0%, var(--cor-principal) 100%);
-    inset: 0;
-    z-index: -1;
-}
-header{
+header {
     height: 150px;
 }
-main{
+
+main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     gap: 100px;
     align-items: center;
-
 }
-.conteudo-container{
+
+.conteudo-container {
     color: #fff;
-    
 }
-.conteudo-container h1{
-    width: 400px;
-    margin-bottom: 40px;
+
+.conteudo-container h1 {
+    width: 230px;
 }
-.conteudo-container p{
+
+.conteudo-container p {
     width: 300px;
-    margin-bottom: 280px;
-    margin-left: -50px;
-}  
-
-@media (max-width: 760px) {
-    body {
-        padding: 8px; 
-    }
-
-    main {
-        gap: 16px; 
-    }
-    .conteudo-container h1{
-        width: 150px;
-    }
-    .conteudo-container p{
-        width: 250px;
-    }  
-
 }
